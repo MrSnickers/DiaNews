@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <meta name="description" content="The homepage of the DiaNews">
+        <title>DiaNews</title>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <div class="header">
+            <form id="search-form">
+                <div class="search">
+                  <label for="search" class="out-of-sight">Some search term </label>
+                  <input type="text" id="search" placeholder="Some search term" required>
+                </div>
+                <div class="sort">
+                  <label for="sort" class="out-of-sight">Sort Articles </label>
+                  <select id="sort">
+                        <option value="none">Sort Articles</option>
+                        <option value="publishedAt">Date</option>
+                        <option value="relevancy">Relevance</option>
+                        <option value="popularity">Popularity</option>
+                    </select>
+                </div>
+               <button id="submit" type="submit"> Search </button>
+              </form>
+        </div>
+        <h1 class="out-of-sight"> The DiaTimes</h1>
+        <div id="articles">
+            <span id="loading">Please Hold ...</span>
+        </div>
+    </body>
+    <footer>
+        <a href="https://newsapi.org">Powered by News API</a>
+    </footer>
+</html>

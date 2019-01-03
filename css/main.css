@@ -1,0 +1,98 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+.out-of-sight {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+body {
+  background-color: #EEE;
+}
+
+.header {
+  background-color: #313131;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.search, .sort, #submit {
+  padding-right: 15px;
+  display: inline-block;
+}
+
+.search {
+  flex-grow: 1;
+}
+
+#search {
+  width: 100%;
+}
+
+#submit {
+  color: #FFF;
+  background: #e71d36;
+  border: 0;
+  border-radius: 6%; 
+  padding: 3px;
+}
+
+#submit:hover, #submit:focus {
+  background: #991222;
+}
+
+.article {
+  background-color: #FFF;
+  display: inline-block;
+  width: 46vw;
+  margin: 10px;
+}
+
+.article-container {
+  margin: 5px;
+}
+
+.article-image {
+  height: 30vh;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.article-title {
+  height: 5rem;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+
+.article-content {
+  height: 3.5rem;
+  overflow: hidden;
+}
+
+.article-button {
+  background-color: #313131;
+  border: 0;
+  border-radius: 5%;
+  color: #FFF;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.article-button:hover, .article-button:focus {
+  background: #222;
+}
